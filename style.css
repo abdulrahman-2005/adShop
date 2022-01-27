@@ -4,6 +4,11 @@
     font-family: monospace;
 }
 
+:root {
+    --funcky-color: yellow;
+    --main-color: black;
+}
+
 .header {
     position: fixed;
     display: flex;
@@ -14,21 +19,21 @@
 
 .header-button {
     height: 100%;
-    background-color: black;
-    color: yellow;
+    background-color: var(--main-color);
+    color: var(--funcky-color);
     font-size: 2rem;
     outline: none;
     border: none;
-    border-bottom: 5px solid yellow;
+    border-bottom: 5px solid var(--funcky-color);
     padding: 0 2vw 0 2vw;
     cursor: pointer;
     transition: 300ms;
 }
 
 .header-button:hover {
-    background-color: yellow;
+    background-color: var(--funcky-color);
     font-size: 4rem;
-    color: black
+    color: var(--main-color)
 }
 
 
@@ -39,7 +44,7 @@
     left: 0;
     height: calc(100% - 70px);
     width: 100%;
-    background-color: black;
+    background-color: var(--main-color);
 }
 
 .ad-container {
@@ -54,15 +59,15 @@
     text-align: center;
     top: 0;
     left: 0;
-    border-top: 5px solid yellow;
+    border-top: 5px solid var(--funcky-color);
     height: calc(20%-5px);
     width: 100%;
-    background-color: black;
+    background-color: var(--main-color);
 }
 
 
 
 .about {
-    color: yellow;
+    color: var(--funcky-color);
     font-size: 2rem;
 }
