@@ -1,0 +1,68 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: monospace;
+}
+
+.header {
+    position: fixed;
+    display: flex;
+    top: 0;
+    left: 0;
+    height: 70px;
+}
+
+.header-button {
+    height: 100%;
+    background-color: black;
+    color: yellow;
+    font-size: 2rem;
+    outline: none;
+    border: none;
+    border-bottom: 5px solid yellow;
+    padding: 0 2vw 0 2vw;
+    cursor: pointer;
+    transition: 300ms;
+}
+
+.header-button:hover {
+    background-color: yellow;
+    font-size: 4rem;
+    color: black
+}
+
+
+
+.container {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    height: calc(100% - 70px);
+    width: 100%;
+    background-color: black;
+}
+
+.ad-container {
+    position: relative;
+    height: 80%;
+    width: 100%;
+    background-color: transparent;
+}
+
+.tagger {
+    position: relative;
+    text-align: center;
+    top: 0;
+    left: 0;
+    border-top: 5px solid yellow;
+    height: calc(20%-5px);
+    width: 100%;
+    background-color: black;
+}
+
+
+
+.about {
+    color: yellow;
+    font-size: 2rem;
+}
